@@ -1,0 +1,20 @@
+.sidebar-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(2 * var(--space-20));
+  padding: var(--space-20) var(--space-8);
+  background-color: var(--mat-sys-primary-container);
+
+  &.expanded {
+    width: calc(8 * var(--space-20));
+  }
+
+  .sidebar-top-content,
+  .sidebar-bottom-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space-16);
+  }
+}

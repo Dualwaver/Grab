@@ -1,0 +1,19 @@
+<nav
+  [class]="this.expanded() ? 'sidebar-container expanded' : 'sidebar-container'"
+>
+  <div class="sidebar-top-content">Top Content</div>
+  <div class="sidebar-bottom-content">
+    <app-sidebar-button
+      [fontIcon]="expandFontIcon()"
+      [text]="this.expanded() ? 'Collapse' : 'Expand'"
+      [expanded]="expanded()"
+      (click)="onExpandClick()"
+      [isRouteButton]="false"
+    />
+    <app-sidebar-button
+      fontIcon="settings"
+      text="Settings"
+      [expanded]="expanded()"
+    />
+  </div>
+</nav>

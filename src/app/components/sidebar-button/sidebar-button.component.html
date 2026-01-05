@@ -1,0 +1,28 @@
+<div class="sidebar-button-container">
+  @if (expanded()) {
+  <button
+    matMiniFab
+    class="sidebar-button-action"
+    [matTooltip]="text()"
+    [matTooltipPosition]="'after'"
+    (click)="onClick($event)"
+  >
+    {{ text() }}
+    <mat-icon fontSet="material-symbols-outlined" class="sidebar-button-icon">
+      {{ fontIcon() }}
+    </mat-icon>
+  </button>
+  } @else {
+  <button
+    matMiniFab
+    class="sidebar-button-action icon-only"
+    [matTooltip]="text()"
+    [matTooltipPosition]="'after'"
+    (click)="onClick($event)"
+  >
+    <mat-icon fontSet="material-symbols-outlined" class="sidebar-icon-action">
+      {{ fontIcon() }}
+    </mat-icon>
+  </button>
+  }
+</div>

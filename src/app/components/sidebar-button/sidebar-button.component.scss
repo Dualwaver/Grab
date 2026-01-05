@@ -1,0 +1,6 @@
+.sidebar-button-container {
+  .sidebar-button-action:not(.icon-only) {
+    width: 100%;
+    column-gap: var(--space-16);
+  }
+}
